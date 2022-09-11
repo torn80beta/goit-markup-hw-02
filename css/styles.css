@@ -1,0 +1,69 @@
+:root {
+    --primary-text-colot: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-colot);
+}
+
+.list {
+    list-style: none;
+}
+
+/* Лого - потрібно доробити */
+.logo-web {
+    color: var(--accent-color);
+}
+
+.logo-studio {
+    color: #000000;
+}
+
+/* Header navigation menu */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.address .link{
+    color: var(--primary-text-colot);
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: var(--accent-color);
+}
+
+/* Main */
+
+.hero {
+    color: var(--primary-white-color);
+    background-color: #2F303A;;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.header {
+    color: var(--title-text-color);
+}
+
+.physical-address {
+    color: #ffffff;
+    background-color: #2F303A;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
+}
