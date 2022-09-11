@@ -3,6 +3,8 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --filter-buttons-bg: #F5F4FA;
+    --filter-buttons-text: #212121;
 }
 
 body {
@@ -14,7 +16,7 @@ body {
     list-style: none;
 }
 
-/* Лого - потрібно доробити */
+/* Лого */
 .logo-web {
     color: var(--accent-color);
 }
@@ -30,6 +32,10 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
     color: var(--accent-color);
 }
 
@@ -58,6 +64,8 @@ body {
     color: var(--title-text-color);
 }
 
+/* Footer */
+
 .physical-address {
     color: #ffffff;
     background-color: #2F303A;
@@ -66,4 +74,17 @@ body {
 .footer {
     color: rgba(255, 255, 255, 0.6);
     background-color: #2F303A;
+}
+
+/* Portfolio */
+
+.filter-button {
+    background-color: var(--filter-buttons-bg);
+    color: var(--filter-buttons-text);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
