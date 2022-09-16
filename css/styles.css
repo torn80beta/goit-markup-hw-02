@@ -12,6 +12,10 @@ body {
     color: var(--primary-text-colot);
 }
 
+.hidden {
+    display: none;
+}
+
 .list {
     list-style: none;
 }
