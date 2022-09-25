@@ -10,6 +10,7 @@
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-colot);
+    font-family: 'Roboto', sans-serif;
 }
 
 .hidden {
@@ -21,17 +22,26 @@ body {
 }
 
 /* Лого */
-.logo-web {
+
+.logo {
+    font-family: Raleway, sans-serif;
     color: var(--accent-color);
+    text-decoration: none;
 }
 
-.logo-studio {
+.logo-black {
     color: #000000;
 }
 
+.logo-white {
+    color: #ffffff;
+}
+
 /* Header navigation menu */
+
 .site-nav .link {
     color: var(--title-text-color);
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -43,12 +53,13 @@ body {
     color: var(--accent-color);
 }
 
-.address .link{
+.contacts .link{
     color: var(--primary-text-colot);
+    text-decoration: none;
 }
 
-.address .link:hover,
-.address .link:focus {
+.contacts .link:hover,
+.contacts .link:focus {
     color: var(--accent-color);
 }
 
@@ -59,25 +70,34 @@ body {
     background-color: #2F303A;;
 }
 
-.button {
+.hero-button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
 
-.header {
+.header-text {
     color: var(--title-text-color);
 }
 
 /* Footer */
+.footer {
+    background-color: #2F303A;
+    color: var(--primary-white-color);
+}
 
 .physical-address {
     color: #ffffff;
-    background-color: #2F303A;
+    text-decoration: none;
 }
 
-.footer {
+.footer-link {
     color: rgba(255, 255, 255, 0.6);
-    background-color: #2F303A;
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.physical-address:hover {
+    color: var(--accent-color);
 }
 
 /* Portfolio */
