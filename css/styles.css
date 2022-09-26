@@ -27,6 +27,9 @@ body {
     font-family: Raleway, sans-serif;
     color: var(--accent-color);
     text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .logo-black {
@@ -42,6 +45,9 @@ body {
 .site-nav .link {
     color: var(--title-text-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 .site-nav .link:hover,
@@ -56,6 +62,9 @@ body {
 .contacts .link{
     color: var(--primary-text-colot);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 .contacts .link:hover,
@@ -67,16 +76,59 @@ body {
 
 .hero {
     color: var(--primary-white-color);
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    text-align: center;
+    cursor: pointer;
 }
 
 .hero-button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
 }
 
-.header-text {
+/* Advantages */
+.advantages-heder {
     color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantages {
+    font-size: 14px;
+    line-height: 1.17;
+}
+
+/* Our Command */
+
+.h2-header {
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+    text-align: center;
+}
+
+.command-header {
+    color: var(--title-text-color);
+    font-weight: 500;
+}
+
+.command {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 /* Footer */
@@ -88,15 +140,20 @@ body {
 .physical-address {
     color: #ffffff;
     text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
-.footer-link:hover,
-.physical-address:hover {
+.footer-link:hover {
     color: var(--accent-color);
 }
 
