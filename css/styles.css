@@ -1,15 +1,14 @@
 :root {
-    --primary-text-colot: #757575;
+    --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --primary-white-color: #ffffff;
-    --filter-buttons-bg: #F5F4FA;
-    --filter-buttons-text: #212121;
+    --primary-light-color: #ffffff;
+    --background-color: #F5F4FA;
 }
 
 body {
-    background-color: var(--primary-white-color);
-    color: var(--primary-text-colot);
+    background-color: var(--primary-light-color);
+    color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
@@ -43,7 +42,8 @@ body {
 
 /* Header navigation menu */
 
-.site-nav .link {
+.site-nav .link,
+.contacts .link {
     color: var(--title-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -52,22 +52,13 @@ body {
     letter-spacing: 0.02em;
 }
 
+.contacts .link {
+    color: var(--primary-text-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
-}
-
-.site-nav .link.current {
-    color: var(--accent-color);
-}
-
-.contacts .link{
-    color: var(--primary-text-colot);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
 .contacts .link:hover,
@@ -75,34 +66,48 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
 /* Main */
 
 .hero {
-    color: var(--primary-white-color);
     background-color: #2F303A;
+    text-align: center;
+}
+
+.hero-text {
+    color: var(--primary-light-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .button {
+    font-family: inherit;
     text-align: center;
     cursor: pointer;
 }
 
 .hero-button {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);
+    color: var(--primary-light-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
+}
+
 /* Advantages */
+
 .advantages-heder {
     color: var(--title-text-color);
     font-size: 14px;
@@ -117,16 +122,19 @@ body {
 
 /* Our Command */
 
-.h2-header {
+.command-bg {
+    background-color: var(--background-color);
+}
+
+.command-card {
+    background-color: var(--primary-light-color);
+}
+
+.title {
     font-size: 36px;
     line-height: 1.17;
     color: var(--title-text-color);
     text-align: center;
-}
-
-.command-header {
-    color: var(--title-text-color);
-    font-weight: 500;
 }
 
 .command {
@@ -135,26 +143,32 @@ body {
     text-align: center;
 }
 
+.command-header {
+    color: var(--title-text-color);
+    font-weight: 500;
+}
+
 /* Footer */
+
 .footer {
     background-color: #2F303A;
-    color: var(--primary-white-color);
+    color: var(--primary-light-color);
+}
+
+.physical-address,
+.footer-link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .physical-address {
     color: #ffffff;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
 }
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
 }
 
 .footer-link:hover {
@@ -164,8 +178,8 @@ body {
 /* Portfolio */
 
 .filter-button {
-    background-color: var(--filter-buttons-bg);
-    color: var(--filter-buttons-text);
+    background-color: var(--background-color);
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -175,7 +189,7 @@ body {
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);
+    color: var(--primary-light-color);
 }
 
 .projects {
@@ -183,10 +197,14 @@ body {
     line-height: 1.86;
 }
 
+.projects .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
 .projects-title {
-    font-weight: 700;
+    color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-text-color);
 }
