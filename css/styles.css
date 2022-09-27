@@ -11,6 +11,7 @@ body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-colot);
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
 }
 
 .hidden {
@@ -48,6 +49,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -65,6 +67,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .contacts .link:hover,
@@ -96,6 +99,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
 }
 
 /* Advantages */
@@ -162,10 +166,27 @@ body {
 .filter-button {
     background-color: var(--filter-buttons-bg);
     color: var(--filter-buttons-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
 }
 
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+}
+
+.projects {
+    font-size: 16px;
+    line-height: 1.86;
+}
+
+.projects-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
 }
