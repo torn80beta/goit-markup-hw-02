@@ -2,8 +2,10 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --background-accent-color: #188CE8;
     --primary-light-color: #ffffff;
-    --background-color: #F5F4FA;
+    --background-light-color: #F5F4FA;
+    --background-dark-color: #2F303A;
 }
 
 body {
@@ -73,7 +75,7 @@ body {
 /* Main */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background-dark-color);
     text-align: center;
 }
 
@@ -103,7 +105,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #188CE8;
+    background-color: var(--background-accent-color);
 }
 
 /* Advantages */
@@ -123,7 +125,7 @@ body {
 /* Our Command */
 
 .command-bg {
-    background-color: var(--background-color);
+    background-color: var(--background-light-color);
 }
 
 .command-card {
@@ -151,7 +153,7 @@ body {
 /* Footer */
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background-dark-color);
     color: var(--primary-light-color);
 }
 
@@ -164,21 +166,22 @@ body {
 }
 
 .physical-address {
-    color: #ffffff;
+    color: var(--primary-light-color);
 }
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
     color: var(--accent-color);
 }
 
 /* Portfolio */
 
 .filter-button {
-    background-color: var(--background-color);
+    background-color: var(--background-light-color);
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
