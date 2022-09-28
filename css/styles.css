@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
+    --black-color :#000000;
     --accent-color: #2196F3;
     --background-accent-color: #188CE8;
     --primary-light-color: #ffffff;
@@ -15,8 +16,17 @@ body {
     letter-spacing: 0.03em;
 }
 
-.hidden {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .list {
@@ -35,11 +45,11 @@ body {
 }
 
 .logo-black {
-    color: #000000;
+    color: var(--black-color);
 }
 
 .logo-white {
-    color: #ffffff;
+    color: var(--primary-light-color);
 }
 
 /* Header navigation menu */
